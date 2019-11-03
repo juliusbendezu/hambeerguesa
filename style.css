@@ -1,0 +1,770 @@
+/*
+ *  Content in this file is structured by html-page, 
+ *  selector-type, and alphabetic order.
+ *  First there are some general sections with general titles like
+ *  Html-page name and general content.
+ * 
+ *  In each section the styles are ordered by selector priority,
+ *  1st: #id
+ *  2nd: .class
+ *  3rd: general
+ *  
+ *  In each selector-type they are orderer alphabetically.
+ *
+ *  Media queries at the bottom.
+ *
+ *  - Colors -
+ *  Hover-yellow: #ffcc00;
+ *  Bg-off-black: #101010;
+ *
+ *
+ */
+
+
+/* --- Navigation --- */
+
+#dark-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #101010;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+#hamburger-nav {
+    /*display: none;*/
+}
+
+.navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 10;
+    transition: all 0.5s;
+}
+
+.nav-link {
+    margin: 1em 2em;
+    z-index: 10;
+}
+
+.nav-link:hover {
+    color: #ffcc00;
+}
+
+.nav-link:last-child {
+    margin-left: auto;
+}
+
+
+/* --- Header --- */
+
+#logo {
+    position: absolute;
+    top: 4em;
+    left: 4em;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    z-index: 1;
+}
+
+#scroll-down-btn {
+    position: absolute;
+    top: 70%;
+    left: 48%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #101010;
+    opacity: 0.7;
+    z-index: 9;
+}
+
+#scroll-down-btn:hover {
+    opacity: 0.8;
+}
+
+#scroll-down-btn:active {
+    opacity: 0.9;
+}
+
+#scroll-down-btn:active:focus {
+    outline: none;
+}
+
+.header-img-container {
+    position: relative;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, black, white, white, white, white, black);
+}
+
+
+/* --- Home content --- */
+
+#beer {
+    grid-column: 3 / 5;
+    grid-row: 1 / 4;
+}
+
+#burger-meal {
+    grid-column: 1 / 3;
+    grid-row: 4 / 8;
+}
+
+#home-footer {
+    margin: 3em;
+}
+
+#intro {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-image: linear-gradient(to bottom right,
+        rgba(220, 50, 0, 0.8),
+        rgba(225, 200, 50, 0.8));
+}
+
+#intro p {
+    margin: 1em 4em;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+#intro p:nth-of-type(1),
+#intro p:nth-of-type(2) {
+    grid-column: 1 / 3;
+}
+
+#intro p:nth-of-type(1) {
+    grid-row: 2 / 3;
+}
+
+#intro p:nth-of-type(2) {
+    grid-row: 3 / 4;
+}
+
+#intro p:nth-of-type(3),
+#intro p:nth-of-type(4),
+#intro p:nth-of-type(5) {
+    grid-column: 3 / 5;
+}
+
+#intro p:nth-of-type(3) {
+    margin-top: 3em;
+    grid-row: 4 / 5;
+}
+
+#intro p:nth-of-type(4) {
+    grid-row: 5 / 6;
+}
+
+#intro p:nth-of-type(5) {
+    grid-row: 6 / 7;
+}
+
+#intro-h2 {
+    margin: 2em;
+    margin-bottom: 0;
+    font-size: 30px;
+    grid-column: 1 / 3;
+}
+
+
+/* --- Menu's content --- */
+
+.menu-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.menu-img {
+    grid-column: 1 / 2;
+}
+
+.menu-intro {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    margin: 3em;
+    margin-bottom: 0;
+    line-height: 2em;
+}
+
+.menu-intro,
+.menu-vid {
+    grid-row: 1 / 2;
+}
+
+.menu-item td {
+    padding: 1em;
+}
+
+.menu-menu {
+    grid-column: 2 / 3;
+    margin-top: 1em;
+}
+
+.menu-menu,
+.menu-img {
+    grid-row: 2 / 3;
+}
+
+.menu-table {
+    background-image: url(https://i.imgur.com/sZMjcAN.jpg);
+    background-position: top;
+    background-size: cover;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.menu-table caption {
+    margin: 1em 0;
+    font-size: 3em;
+}
+
+.menu-vid {
+    width: 100%;
+    grid-column: 2 / 3;
+    opacity: 0.8;
+}
+
+
+/* --- Burgers content --- */
+
+
+/* --- Beers content --- */
+
+#beers-header-img {
+    opacity: 0.9;
+}
+
+
+/* --- Reservation content --- */
+
+
+/* Submit Burger button */
+
+/*
+ *  -- Burger-colors -- 
+ *  Bun-orange: #f2960d;
+ *  Meat-brown: #76250a;
+ *  Salad-green: #009933;
+ *  Cheese-yellow: #ffdb4d;
+ */
+
+#bite {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: 0;
+    width: 30%;
+    height: 100%;
+    z-index: 2;
+    display: none;
+}
+
+#bite div {
+    position: absolute;
+    background-color: #101010;
+    border-top-left-radius: 14em;
+    border-bottom-left-radius: 14em;
+    width: 130%;
+    height: 60%;
+}
+
+#bite div:first-of-type {
+    top: 0;
+}
+
+#bite div:last-child {
+    bottom: 0;
+}
+
+#bun-top {
+    width: 90%;
+    height: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: #f2960d;
+}
+
+#bun-bottom {
+    width: 90%;
+    height: 25px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #f2960d;
+}
+
+#cheese {
+    width: 102%;
+    height: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: #ffdb4d;
+}
+
+#salad {
+    width: 105%;
+    height: 8px;
+    background-color: #009933;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+#submit-burger {
+    position: relative;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* End submit-burger */
+
+#res-time {
+    width: 100%;
+    border-bottom: 2px solid white;
+    color: gray;
+    background-color: #101010;
+}
+
+#reservation-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-left: 5em;
+}
+
+#reservation-footer {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    margin: 2em auto;
+}
+
+#reservation-form-container {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    z-index: 1;
+    text-align: center;
+}
+
+#reservation-imgs {
+    grid-column: 3 / 5;
+    grid-row: 1 / 3;
+}
+
+#reservation-imgs img {
+    width: 100%;
+    opacity: 0.5;
+}
+
+#reservation-submit {
+    height: 35px;
+    color: #f2960d;
+    background-color: #76250a;
+    margin: 5px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+
+#reservation-submit:hover {
+    color: white;
+    cursor: pointer;
+    font-size: 23px;
+}
+
+#reservation-submit:hover+#bite {
+    display: block;
+}
+
+#bite:hover {
+    display: block;
+}
+
+.form-icon {
+    width: 1.5em;
+    margin: 0 1em;
+}
+
+.form-input-div {
+    display: flex;
+    flex-direction: row;
+    width: 20em;
+    margin: 0.8em auto;
+}
+
+.form-input-div input {
+    color: gray;
+    border-bottom: 2px solid white;
+    padding-left: 1em;
+    width: 100%;
+}
+
+input,
+select {
+    border: none;
+    background: none;
+}
+
+
+/* --- Contact content --- */
+
+#contact-body {}
+
+#contact-body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    z-index: -1;
+    background-image: url("https://i.imgur.com/ZU2ZyPa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+/* --- Credits content --- */
+
+#artists-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#credit-back-link {
+    margin: 2em;
+    margin-top: 1em;
+}
+
+#credits-bg {
+    position: absolute;
+    top: 8em;
+    left: 4em;
+    width: 90%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+#credits-container {
+    margin: 4em 6em;
+
+}
+
+.big-link.artist {
+    margin: 1.5em;
+    font-family: 'Holtwood One SC', serif;
+    font-size: 20px;
+}
+
+
+/* --- General --- */
+
+.arrow {
+    background-color: white;
+    position: absolute;
+    display: block;
+    top: 58%;
+    width: 20px;
+    height: 2px;
+    z-index: 2;
+}
+
+.arrow:first-of-type {
+    right: 42%;
+    transform: rotate(45deg);
+}
+
+.arrow:last-child {
+    left: 40%;
+    transform: rotate(-45deg);
+}
+
+.big-link {
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+    font-family: 'Playfair Display', cursive;
+    text-decoration-line: none;
+    transition: transform 0.5s;
+}
+
+.big-link:hover {
+    transform: scale(1.1);
+}
+
+.dark-img {
+    opacity: 0.8;
+}
+
+.no-header-img-container {
+    margin-top: 8em;
+}
+
+.small-text {
+    font-size: 12px;
+}
+
+a {
+    color: white;
+}
+
+body {
+    margin: 0;
+    background-color: #101010;
+    color: white;
+    font-family: "Questrial", sans-serif;
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+
+/* --- Media Queries --- */
+
+@media screen and (max-width: 950px) {
+
+    /* Navigation */
+
+    .nav-link {
+        font-size: 20px;
+        margin: 1.5em;
+    }
+
+    #logo {
+        font-size: 25px;
+    }
+
+    #scroll-down-btn {
+        top: 80%;
+    }
+
+
+    /* Home */
+
+    #intro {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background: none;
+        line-height: 4em;
+    }
+
+    #intro::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0.5;
+        z-index: -1;
+        background-image: url(https://i.imgur.com/mxcCRGB.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #intro img {
+        display: none;
+    }
+
+
+    /* Menu's */
+
+    .menu-table {
+        font-size: 1.4em;
+    }
+
+    .menu-table caption {
+        font-size: 2em;
+    }
+
+
+    /* Reservation */
+
+    #reservation-container {
+        display: block;
+        margin-right: 4em;
+        margin-left: 4em;
+
+    }
+
+    #reservation-imgs {
+        display: none;
+    }
+
+    /* Credits */
+
+    #credits-container {
+        margin: 3em;
+    }
+
+    #artists-grid {
+        grid-template-columns: auto auto;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+
+    /* Home header */
+    #logo {
+        font-size: 15px;
+        top: 8em;
+    }
+
+    /* Make hamburger */
+
+    #hamburger-nav {
+        display: block;
+        margin: 2em;
+        width: 2em;
+        z-index: 10;
+    }
+
+    #hamburger-nav:hover {
+        cursor: pointer;
+    }
+
+    .hamburger-nav-line {
+        width: 100%;
+        height: 3px;
+        margin: 2px 0;
+        background-color: #f2960d;
+        border-radius: 10px;
+        transition: all 0.5s;
+    }
+
+    .hamburger-nav-line:first-of-type {
+        transform: translateY(-5px);
+    }
+
+    .hamburger-nav-line:last-child {
+        transform: translateY(5px);
+    }
+
+    .hamburger-nav-line:nth-of-type(even) {
+        background-color: #76250a;
+    }
+
+    .hamburger-nav-line.open:first-of-type {
+        transform: translateY(5px) rotate(45deg);
+    }
+
+    .hamburger-nav-line.open:nth-of-type(even) {
+        opacity: 0;
+    }
+
+    .hamburger-nav-line.open:last-child {
+        transform: translateY(-5px) rotate(-45deg);
+    }
+
+    .navigation.open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 10em;
+        background-color: #101010;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3),
+            4px 4px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .nav-link.open {
+        display: block;
+        margin: 1em;
+    }
+
+    .nav-link.open:last-child {
+        margin: 1em;
+        margin-bottom: 2em;
+    }
+
+
+    /* Navigation */
+
+    #scroll-down-btn {
+        display: none;
+    }
+
+    /* Home content */
+
+    #intro {
+        line-height: 2em;
+    }
+
+    #intro-h2 {
+        font-size: 20px;
+    }
+
+    #intro p {
+        font-size: 1em;
+    }
+
+    /* Menu's content */
+
+    .menu-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-intro {
+        line-height: 1.5em;
+    }
+
+    .menu-table {
+        font-size: 1.2em;
+    }
+
+    /* Credits */
+
+    #credits-bg {
+        left: 2em;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    /* Home header */
+
+    #logo {
+        top: 8em;
+        font-size: 10px;
+    }
+
+    /* Credits */
+
+    #artists-grid {
+        display: flex;
+        flex-direction: column;
+    }
+}

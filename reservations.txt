@@ -1,0 +1,56 @@
+Name: Julius
+Party: 6
+Time: 20:00
+Date: 2019-11-02
+Phone_number: 0739562949
+
+
+
+Name: Julius
+Party: 2
+Time: 19:30
+Date: 2019-10-31
+Phone_number: 0739562949
+
+
+
+Name: Julius
+Party: 8
+Time: 19:30
+Date: 2019-11-02
+Phone_number: 0739562949
+
+
+
+name: Julius
+party: 5
+time: 18:30
+date: 2019-11-30
+phone_number: 0739562949
+
+
+
+name: Julius
+party: 5
+time: 18:30
+date: 2019-11-30
+phone_number: 0739562949
+
+
+
+name: Julius
+party: 5
+time: 18:30
+date: 2019-11-30
+phone_number: 0739562949
+
+
+
+name: Julius
+party: 6
+time: 16:45
+date: 2019-11-07
+phone_number: 0739562949
+
+
+

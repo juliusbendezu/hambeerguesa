@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Beers - at Hambeerguesa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://img.icons8.com/emoji/48/000000/hamburger-emoji.png">
+    <!-- Style-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Holtwood+One+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="utils.js"></script>
+</head>
+
+<body id="beers-body">
+    <header>
+        <nav class="navigation">
+            <div id="dark-box"></div>
+            <div id="hamburger-nav" onclick="menuClick()">
+                <div class="hamburger-nav-line"></div>
+                <div class="hamburger-nav-line"></div>
+                <div class="hamburger-nav-line"></div>
+            </div>
+            <a href="home.html" class="big-link nav-link">Home</a>
+            <a href="burgers.html" class="big-link nav-link">Burgers</a>
+            <a href="beers.html" class="big-link nav-link" style="color: #ffcc00; transform: scale(1.1);">Beer</a>
+            <a href="reservation.html" class="big-link nav-link">Book</a>
+            <a href="contact.html" class="big-link nav-link">Contact</a>
+        </nav>
+        <div class="header-img-container">
+            <img src="https://i.imgur.com/WTZcuds.jpg" alt="4 IPAs on a wooden table out in the sun." class="header-img" id="beers-header-img">
+            <button type="button" id="scroll-down-btn" onclick="scrollPastHeader()"><span class="arrow"></span><span class="arrow"></span></button>
+        </div>
+    </header>
+    <div id="beers-container" class="menu-container">
+        <div id="beers-intro" class="menu-intro">
+            <h1>
+                Our beers
+            </h1>
+            <h3>
+                Thirsty? So are we, so come in and let's have a beer together. Wether it is lager or IPA, with food or by the bar, alcohol or non-alco. We have it! Listed here is some of our great stock, be inspired and come in to check out the full experience.
+            </h3>
+        </div>
+        <table class="menu-table" id="beer-menu">
+            <caption>
+                - Brews -
+            </caption>
+            <thead>
+            </thead>
+            <tbody>
+                <tr class="menu-item">
+                    <td class="name-label">Originals lager</td>
+                    <td class="price-label">69 <span class="currency-label">kr</span></td>
+                </tr>
+                <tr class="menu-item">
+                    <td class="name-label">Antartic ale</td>
+                    <td class="price-label">85 <span class="currency-label">kr</span></td>
+                </tr>
+                <tr class="menu-item">
+                    <td class="name-label">Bomber brew</td>
+                    <td class="price-label">85 <span class="currency-label">kr</span></td>
+                </tr>
+                <tr class="menu-item">
+                    <td class="name-label">Crimson lager</td>
+                    <td class="price-label">75 <span class="currency-label">kr</span></td>
+                </tr>
+                <tr class="menu-item">
+                    <td class="name-label">Mammoth drink</td>
+                    <td class="price-label">109 <span class="currency-label">kr</span></td>
+                </tr>
+                <tr class="menu-item">
+                    <td class="name-label">Honest IPA</td>
+                    <td class="price-label">99 <span class="currency-label">kr</span></td>
+                </tr>
+                <tr class="menu-item">
+                    <td class="name-label">Squirrel Monkey APA</td>
+                    <td class="price-label">99 <span class="currency-label">kr</span></td>
+                </tr>
+            </tbody>
+        </table>
+        <video class="menu-vid" muted autoplay loop>
+            <source src="https://i.imgur.com/uyEdhHX.mp4" type="video/mp4">
+        </video>
+        <img src="https://i.imgur.com/c7T991P.jpg" alt="A bottle of beer accompanying a burger meal." class="menu-img dark-img">
+    </div>
+</body>
+
+</html>
